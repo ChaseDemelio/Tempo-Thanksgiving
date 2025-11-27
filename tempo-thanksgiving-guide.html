@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #1a1a1a; -webkit-text-stroke: #1a1a1a; background-color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #1a1a1a; -webkit-text-stroke: #1a1a1a; background-color: #ffffff; min-height: 11.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Thanksgiving: Feast of the Feastbringer - Raid Guide (Classic)&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Reset / base */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>* {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: #141414 url("https://wow.zamimg.com/images/wow/icons/medium/inv_thanksgiving_turkey.jpg") no-repeat fixed center top;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #e3e3e3;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>line-height: 1.5;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>a {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffcc00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-decoration: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>a:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-decoration: underline;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Header */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: linear-gradient(90deg, #111 0%, #1f1f1f 50%, #111 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-bottom: 2px solid #ff8000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 12px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position: sticky;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>top: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>z-index: 100;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.header-logo {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 32px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>height: 32px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: radial-gradient(circle at 30% 30%, #ffcc00 0, #ff8000 45%, #6a2b00 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-shadow: 0 0 4px rgba(0,0,0,0.8);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.header-title {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffcc00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.header-subtitle {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #aaa;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-left: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Layout */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.page {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>max-width: 1200px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 16px auto 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 0 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Sidebar */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.sidebar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 250px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(10,10,10,0.9);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: 1px solid #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>max-height: calc(100vh - 80px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>overflow-y: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position: sticky;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>top: 72px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.sidebar-title {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffcc00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding-bottom: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.sidebar ul {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>list-style: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.sidebar li {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 4px 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.sidebar li a {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ddd;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.sidebar li a:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffcc00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Main content */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.content {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flex: 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(15,15,15,0.95);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: 1px solid #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 16px 20px 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.tagline {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #bbb;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>h1 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffcc00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-shadow: 0 0 6px rgba(0,0,0,0.8);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>h2 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffb84d;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 20px 0 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding-bottom: 3px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>h3 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffdd88;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 14px 0 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>h4 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffd18a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 10px 0 3px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>p {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 4px 0 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ul {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 4px 0 8px 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>li {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 2px 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.pill-row {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 6px 0 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.pill {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 2px 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: 1px solid #444;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: #222;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ddd;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>white-space: nowrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.meta-box {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: 1px solid #444;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: #1a1a1a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 8px 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.meta-box strong {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffcc00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.callout {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-left: 3px solid #ff8000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: #1c1308;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 8px 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 10px 0 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.callout strong {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffcc00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.table-like {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: 1px solid #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: #1a1a1a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 8px 0 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.table-row {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #262626;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.table-row:last-child {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-bottom: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.table-cell {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 6px 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.table-cell.header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: #262626;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #ffcc00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.table-cell.w-30 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 30%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.table-cell.w-70 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 70%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.footer-note {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #888;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-top: 1px solid #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding-top: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (max-width: 900px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.page {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.sidebar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>position: static;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>max-height: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>order: -1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;header class="header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="header-logo"&gt;T&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="header-title"&gt;Thanksgiving: Feast of the Feastbringer&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="header-subtitle"&gt;WoW Classic – Holiday Raid Guide&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="page"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;aside class="sidebar"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="sidebar-title"&gt;Quick Navigation&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#overview"&gt;Overview&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#prep"&gt;Raid Preparation&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#attunement"&gt;Attunement&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#consumables"&gt;Consumables &amp; World Buffs&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#trash"&gt;Greeting Trash Gauntlet&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#boss"&gt;Boss: The Feastbringer&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#phases"&gt;Phase Breakdown&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#loot"&gt;Loot &amp; Rewards&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#achievements"&gt;Achievements&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#lockout"&gt;Lockout&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/aside&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main class="content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="overview"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Thanksgiving: Feast of the Feastbringer&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="tagline"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>A once-per-year, 40-player social raid tuned for maximum emotional damage and Well Fed uptime.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="meta-box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Instance Type:&lt;/strong&gt; Holiday Raid (Family)&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; High – mechanically simple, socially lethal&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Recommended Size:&lt;/strong&gt; 10–40 players (extended family scaling)&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Primary Rewards:&lt;/strong&gt; Well Fed, Leftovers, Parental Approval&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Thanksgiving is a single-boss raid centered around &lt;strong&gt;The Feastbringer (Mom)&lt;/strong&gt;. Once</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;em&gt;Dinner Phase&lt;/em&gt; begins, the instance cannot be reset. Expect long phases, unskippable RP, and</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>wipe conditions tied to poor plate management, arguments, or refusing seconds.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="prep"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Raid Preparation&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Recommended Raid Composition&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="table-like"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="table-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell header w-30"&gt;Role&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell header w-70"&gt;Recommended&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="table-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-30"&gt;Main Tank&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-70"&gt;Dad (handles Turkey Carve frontal cleave)&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="table-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-30"&gt;Off-Tank&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-70"&gt;Oldest sibling / cousin, assigned to kid-aggro and stray NPCs&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="table-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-30"&gt;Healers&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-70"&gt;Anyone doing dishes, emotional support, or conflict resolution&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="table-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-30"&gt;Melee DPS&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-70"&gt;Carvers, table-setters, food runners&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="table-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-30"&gt;Ranged DPS&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-70"&gt;Couch crew, commentary specialists, “supervisors”&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="table-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-30"&gt;Utility Hybrids&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="table-cell w-70"&gt;People who can “check the rolls,” “grab drinks,” and kite conversations&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="callout"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;strong&gt;Tip:&lt;/strong&gt; Bring at least one raid member with high IRL Charisma to off-tank awkward conversations</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>and interrupt near-wipe scenarios.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="attunement"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Attunement&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Entry to the instance requires completion of the questline</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;strong&gt;“What Are You Bringing?”&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Bring one dish, dessert, or drink.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Equip at least one polite greeting.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Acknowledge The Feastbringer (Mom) on arrival.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Failing attunement applies the debuff &lt;strong&gt;Showed Up Empty-Handed&lt;/strong&gt;, increasing Disappointment damage</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>taken for the entire lockout.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="consumables"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Consumables &amp; World Buffs&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Recommended Consumables&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="pill-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="pill"&gt;Elixir of Social Fortitude&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="pill"&gt;Dark Gravy Protection Potion&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="pill"&gt;Rumsey Rum (Any)&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="pill"&gt;Cranberry Crit Elixir&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="pill"&gt;Emergency AFK Macro&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Elixir of Social Fortitude:&lt;/strong&gt; Increases patience and tolerance to repeat questions.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Dark Gravy Protection Potion (DGPP):&lt;/strong&gt; Reduces incoming Disappointment damage.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Rumsey Rum:&lt;/strong&gt; Grants stamina for Dessert Enrage phase.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Cranberry Crit Elixir:&lt;/strong&gt; Increases crit chance on compliments and small talk.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Emergency AFK Macro:&lt;/strong&gt; “Bathroom break” or “need to check something” escape tool.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;World Buffs&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Grandma’s Meal:&lt;/strong&gt; Strongest Well Fed buff. Cannot be dispelled, only consumed.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Cozy Home (Fireplace Aura):&lt;/strong&gt; +40 stamina, reduces emotional damage taken.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Sibling Coordination:&lt;/strong&gt; Pre-raid coordination buff; improves interrupt coverage.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Good Night’s Sleep:&lt;/strong&gt; Mandatory for progression pulls.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="trash"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Greeting Trash Gauntlet&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Before reaching the boss, the raid must clear the unskippable &lt;strong&gt;Greeting Gauntlet&lt;/strong&gt;, a corridor</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>filled with high-HP NPCs linked by social tethers.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Key Trash NPCs&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Aunt Cluster&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Hug Spam:&lt;/strong&gt; Harmless but roots targets briefly.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;How’s Work?&lt;/strong&gt; Roots target for 30+ seconds with forced dialogue.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Uncle of Infinite Stories&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Story From ’78:&lt;/strong&gt; 90-second uninterruptible channeled monologue.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Misremembered Anecdote:&lt;/strong&gt; Confuses target, lowering mental clarity.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Cousin Level 12&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Casts &lt;strong&gt;Look What I Can Do&lt;/strong&gt; on a short cooldown, demanding constant attention.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Neighbor Nobody Knows&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Stealthed add that opens with &lt;strong&gt;I Don’t Believe We’ve Met&lt;/strong&gt;.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Applies raid-wide awkwardness debuff.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="callout"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;strong&gt;Trash Tip:&lt;/strong&gt; Absolutely avoid triggering the hidden</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;strong&gt;Family Politics&lt;/strong&gt; mechanic. This is effectively an instant wipe.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="boss"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Boss: The Feastbringer (Mom)&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;em&gt;“She Who Must Be Obeyed” – Family, Humanoid&lt;/em&gt;&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="meta-box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Health:&lt;/strong&gt; Very High&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Enrage Timer:&lt;/strong&gt; Variable (based on raid behavior)&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Wipe Conditions:&lt;/strong&gt; Arguing, insufficient eating, refusing seconds, ignoring mechanics&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Immunities:&lt;/strong&gt; Silence, hard CC, weak excuses&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Global Abilities&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Guilt Aura:&lt;/strong&gt; Passive aura that stacks on players who skip mechanics or avoid food.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Overcooked Disappointment:&lt;/strong&gt; Raid-wide emotional damage if effort isn’t acknowledged.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Plate Check:&lt;/strong&gt; Random inspection; can trigger &lt;strong&gt;Guilt Bomb&lt;/strong&gt; follow-up.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Active Abilities&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Turkey Carve (Frontal Cleave):&lt;/strong&gt; MT only. Any melee in front arc risk Dryness stacks.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Seconds Call (Raid Check):&lt;/strong&gt; If under 50% of raid accepts seconds, casts</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;strong&gt;Disappointment Volley&lt;/strong&gt;.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Gravy Slick:&lt;/strong&gt; Ground effect slowing movement, causing plate mishaps.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Dessert Enrage:&lt;/strong&gt; At high raid fullness, casts &lt;strong&gt;Try My Pie&lt;/strong&gt; repeatedly.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="phases"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Phase Breakdown&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Phase 1: Table Setup&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Soft RP phase. Minimal damage but high risk of early pulls.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Do not pull Mom’s aggro by hovering in the kitchen.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Assign utility players to assist with placing dishes and drinks.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Ranged should position near exits to kite early conversation adds.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Phase 2: Main Course&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Primary progression check; longest and most demanding phase.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Maintain even food consumption to avoid &lt;strong&gt;You Didn’t Try My Dish&lt;/strong&gt; stacks.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Healers manage both physical and emotional damage from small talk and criticism mechanics.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Tanks rotate cooldowns when &lt;strong&gt;Turkey Carve&lt;/strong&gt; overlaps with &lt;strong&gt;Seconds Call&lt;/strong&gt;.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Phase 3: Dessert (Soft Enrage)&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Pie Beam:&lt;/strong&gt; Chain-dessert effect; multiple bounces possible.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Sweetness Overload:&lt;/strong&gt; Severe movement speed reduction.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Food Coma:&lt;/strong&gt; Ticking debuff that eventually incapacitates the raid.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Execute phase begins when raid reaches ~85% fullness. Manage intake carefully to avoid early coma.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Hard Enrage: Political Discussion&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Triggered by any NPC mentioning politics, controversial news, or “kids these days.”</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Only counter is &lt;strong&gt;Immediate Subject Change&lt;/strong&gt;, with low success rate.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;If it lands, the cast is delayed. If it fails, prepare for a full emotional wipe.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Phase 4: Cleanup (Hidden Final Boss)&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>On defeat, The Feastbringer summons &lt;strong&gt;The Sink&lt;/strong&gt;, a high-armor stationary add.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Requires 5–7 cleaners for efficient kill.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Ignoring The Sink applies &lt;strong&gt;Reputation Loss&lt;/strong&gt; until next holiday.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Completing Cleanup grants &lt;strong&gt;Parental Approval&lt;/strong&gt; until Christmas reset.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="loot"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Loot &amp; Rewards&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Common Drops&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Leftovers:&lt;/strong&gt; In multiple containers; quality scales with early participation.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Well Fed Buff:&lt;/strong&gt; Long-duration stat increase, stacks with Rested XP IRL.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Ziplock Containers of Unknown Origin:&lt;/strong&gt; BoE, can be reused.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Rare Drops&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Home Baked Rolls:&lt;/strong&gt; High-value comfort food item.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Pie Slice of Unusual Size:&lt;/strong&gt; Cosmetic + morale boost.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Unattainable Warmth of Family:&lt;/strong&gt; Non-tradable, nostalgia-type trinket.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Legendary Rewards&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Take Some With You:&lt;/strong&gt; Legendary-level insistence; guarantees Leftover drop.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Mom’s Good Graces:&lt;/strong&gt; Reputation buff lasting until Christmas instance.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="achievements"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Achievements&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;[No Wipes]:&lt;/strong&gt; Complete the raid without any arguments.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;[Seconds Heroic]:&lt;/strong&gt; Accept seconds for all major dishes.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;[The Pie-tanical]:&lt;/strong&gt; Survive Dessert Phase without entering Food Coma.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;[Uncle Interruptor]:&lt;/strong&gt; Successfully stop &lt;em&gt;Story From ’78&lt;/em&gt; before full channel.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;[Full Clear]:&lt;/strong&gt; Participate in Cleanup Phase without being asked.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="lockout"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Lockout&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Thanksgiving has a strict &lt;strong&gt;annual lockout&lt;/strong&gt; (~365 days). The instance cannot be extended, reset,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>or pugged after the fact. All progress and reputation carry into future years.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="footer-note"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Share this page with your guild, assign roles, pop your world buffs, and good luck on progression. May your RNG</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>be blessed and your wipes minimal.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
